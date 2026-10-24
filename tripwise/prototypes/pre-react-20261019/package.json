@@ -1,0 +1,14 @@
+{
+  "name": "@tripwise/customer-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tripwise customer website — modular interactive beta",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,36 @@
+export const paths = {
+  plane: 'M22 2 9 15M22 2l-7 20-4-9-9-4Z',
+  home: 'm3 10 9-7 9 7v10H3zM9 20v-7h6v7',
+  search: 'M21 21l-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0',
+  heart: 'M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z',
+  user: 'M20 21v-2a7 7 0 0 0-14 0v2M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0',
+  bag: 'M4 7h16v14H4zM9 7V3h6v4M8 11v6M16 11v6',
+  hotel: 'M3 21V4h18v17M8 21v-5h8v5M7 8h2M15 8h2M7 12h2M15 12h2',
+  spark: 'm12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z',
+  bell: 'M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4',
+  globe: 'M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18',
+  check: 'm5 12 4 4L19 6',
+  shield: 'm12 3 8 3v6c0 6-8 10-8 10S4 18 4 12V6zM8 12l3 3 5-6',
+  clock: 'M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 7v5l3 2',
+  pin: 'M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0',
+  filter: 'M4 6h16M4 12h16M4 18h16M8 3v6M16 9v6M10 15v6',
+  close: 'm6 6 12 12M6 18 18 6',
+  calendar: 'M4 5h16v16H4zM8 2v6M16 2v6M4 10h16',
+  star: 'm12 3 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1Z',
+  wallet: 'M3 5h17v16H3zM3 5V3h14M15 11h7v5h-7z',
+  help: 'M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M9 9a3 3 0 0 1 6 0c0 2-3 2-3 5M12 17h.01',
+  settings: 'M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2',
+  download: 'M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4',
+  edit: 'm16 3 5 5-12 12H4v-5ZM14 5l5 5',
+  send: 'm22 2-7 20-4-9-9-4 20-7ZM22 2 11 13',
+  plus: 'M12 5v14M5 12h14',
+  back: 'm14 5-7 7 7 7',
+  chart: 'M4 3v18h18M8 17v-6M13 17V7M18 17V4',
+  menu: 'M3 6h18M3 12h18M3 18h18',
+  wifi: 'M2 8a17 17 0 0 1 20 0M5 12a12 12 0 0 1 14 0M8 16a6 6 0 0 1 8 0M12 20h.01',
+  copy: 'M8 8h13v13H8zM16 8V3H3v13h5',
+  map: 'm3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16M15 5v16'
+};
+export const icon = n => `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="${paths[n] || paths.spark}"/>
+</svg>`;

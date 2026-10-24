@@ -1,0 +1,10 @@
+const { cpSync, mkdirSync } = require('node:fs');
+const { resolve } = require('node:path');
+const project = resolve(__dirname, '..');
+const customer = resolve(project, 'tripwise/apps/customer/web');
+const target = resolve(project, 'src/tripwise');
+mkdirSync(target, { recursive: true });
+cpSync(resolve(customer, 'src'), target, { recursive: true });
+cpSync(resolve(customer, 'public/assets'), resolve(project, 'public/assets'), { recursive: true });
+cpSync(resolve(customer, 'public/index.html'), resolve(project, 'public/index.html'));
+console.log('Tripwise React source and brand assets prepared.');

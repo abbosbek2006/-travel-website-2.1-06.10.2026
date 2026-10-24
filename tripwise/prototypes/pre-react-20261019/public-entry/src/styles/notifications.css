@@ -1,0 +1,14 @@
+.notifications-list { min-width: 0; align-content: start; }
+.notification-card { display: flex; gap: 18px; align-items: flex-start; }
+.notification-icon { display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; border-radius: 14px; background: #edf3fa; color: #062441; }
+.notification-card > div { min-width: 0; }
+.notification-card h2 { font-size: 20px; margin: 12px 0 8px; overflow-wrap: anywhere; }
+.notification-card p { color: var(--muted); line-height: 1.6; overflow-wrap: anywhere; }
+.notification-card .textbtn { display: inline-flex; min-height: 44px; align-items: center; }
+.notification-note { margin: 0; padding: 4px; line-height: 1.6; }
+.tools a.iconbtn[aria-current="page"] { background: #edf3fa; color: #062441; }
+@media (max-width: 680px) {
+  .notification-card { padding: 18px; gap: 12px; }
+  .notification-card h2 { font-size: 18px; }
+  .notification-icon { flex-basis: 36px; width: 36px; height: 36px; border-radius: 12px; }
+}

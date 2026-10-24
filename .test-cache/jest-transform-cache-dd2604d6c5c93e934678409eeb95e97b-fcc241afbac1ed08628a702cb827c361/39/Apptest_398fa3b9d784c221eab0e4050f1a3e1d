@@ -1,0 +1,28 @@
+ca22421e4cd28296309ed7125d05acb4
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/ANUBIS/-travel-website-2.1-06.10.2026/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+var _react = require("@testing-library/react");
+var _App = _interopRequireDefault(require("./App"));
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _jsxFileName = "C:\\Users\\ANUBIS\\-travel-website-2.1-06.10.2026\\src\\App.test.js";
+test('opens the Tripwise home page and notifications link', () => {
+  sessionStorage.setItem('tripwise-welcome-seen', '1');
+  sessionStorage.setItem('tripwise-promo-hidden', '1');
+  window.location.hash = 'home';
+  window.matchMedia = () => ({
+    matches: true
+  });
+  (0, _react.render)(/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_App.default, {}, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 10
+  }, void 0));
+  expect(_react.screen.getByRole('heading', {
+    name: /Dunyo sizni/
+  })).toBeInTheDocument();
+  expect(_react.screen.getByRole('link', {
+    name: 'Bildirishnomalar'
+  })).toHaveAttribute('href', '#notifications');
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX0FwcCIsIl9pbnRlcm9wUmVxdWlyZURlZmF1bHQiLCJfanN4RGV2UnVudGltZSIsIl9qc3hGaWxlTmFtZSIsInRlc3QiLCJzZXNzaW9uU3RvcmFnZSIsInNldEl0ZW0iLCJ3aW5kb3ciLCJsb2NhdGlvbiIsImhhc2giLCJtYXRjaE1lZGlhIiwibWF0Y2hlcyIsInJlbmRlciIsImpzeERFViIsImRlZmF1bHQiLCJmaWxlTmFtZSIsImxpbmVOdW1iZXIiLCJjb2x1bW5OdW1iZXIiLCJleHBlY3QiLCJzY3JlZW4iLCJnZXRCeVJvbGUiLCJuYW1lIiwidG9CZUluVGhlRG9jdW1lbnQiLCJ0b0hhdmVBdHRyaWJ1dGUiXSwic291cmNlcyI6WyJBcHAudGVzdC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyByZW5kZXIsIHNjcmVlbiB9IGZyb20gJ0B0ZXN0aW5nLWxpYnJhcnkvcmVhY3QnO1xyXG5pbXBvcnQgQXBwIGZyb20gJy4vQXBwJztcclxuXHJcbnRlc3QoJ29wZW5zIHRoZSBUcmlwd2lzZSBob21lIHBhZ2UgYW5kIG5vdGlmaWNhdGlvbnMgbGluaycsICgpID0+IHtcclxuICBzZXNzaW9uU3RvcmFnZS5zZXRJdGVtKCd0cmlwd2lzZS13ZWxjb21lLXNlZW4nLCAnMScpO1xyXG4gIHNlc3Npb25TdG9yYWdlLnNldEl0ZW0oJ3RyaXB3aXNlLXByb21vLWhpZGRlbicsICcxJyk7XHJcbiAgd2luZG93LmxvY2F0aW9uLmhhc2ggPSAnaG9tZSc7XHJcbiAgd2luZG93Lm1hdGNoTWVkaWEgPSAoKSA9PiAoeyBtYXRjaGVzOiB0cnVlIH0pO1xyXG4gIHJlbmRlcig8QXBwIC8+KTtcclxuICBleHBlY3Qoc2NyZWVuLmdldEJ5Um9sZSgnaGVhZGluZycsIHsgbmFtZTogL0R1bnlvIHNpem5pLyB9KSkudG9CZUluVGhlRG9jdW1lbnQoKTtcclxuICBleHBlY3Qoc2NyZWVuLmdldEJ5Um9sZSgnbGluaycsIHsgbmFtZTogJ0JpbGRpcmlzaG5vbWFsYXInIH0pKS50b0hhdmVBdHRyaWJ1dGUoJ2hyZWYnLCAnI25vdGlmaWNhdGlvbnMnKTtcclxufSk7XHJcbiJdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO0FBQ0EsSUFBQUMsSUFBQSxHQUFBQyxzQkFBQSxDQUFBRixPQUFBO0FBQXdCLElBQUFHLGNBQUEsR0FBQUgsT0FBQTtBQUFBLElBQUFJLFlBQUE7QUFFeEJDLElBQUksQ0FBQyxxREFBcUQsRUFBRSxNQUFNO0VBQ2hFQyxjQUFjLENBQUNDLE9BQU8sQ0FBQyx1QkFBdUIsRUFBRSxHQUFHLENBQUM7RUFDcERELGNBQWMsQ0FBQ0MsT0FBTyxDQUFDLHVCQUF1QixFQUFFLEdBQUcsQ0FBQztFQUNwREMsTUFBTSxDQUFDQyxRQUFRLENBQUNDLElBQUksR0FBRyxNQUFNO0VBQzdCRixNQUFNLENBQUNHLFVBQVUsR0FBRyxPQUFPO0lBQUVDLE9BQU8sRUFBRTtFQUFLLENBQUMsQ0FBQztFQUM3QyxJQUFBQyxhQUFNLGVBQUMsSUFBQVYsY0FBQSxDQUFBVyxNQUFBLEVBQUNiLElBQUEsQ0FBQWMsT0FBRztJQUFBQyxRQUFBLEVBQUFaLFlBQUE7SUFBQWEsVUFBQTtJQUFBQyxZQUFBO0VBQUEsU0FBRSxDQUFDLENBQUM7RUFDZkMsTUFBTSxDQUFDQyxhQUFNLENBQUNDLFNBQVMsQ0FBQyxTQUFTLEVBQUU7SUFBRUMsSUFBSSxFQUFFO0VBQWMsQ0FBQyxDQUFDLENBQUMsQ0FBQ0MsaUJBQWlCLENBQUMsQ0FBQztFQUNoRkosTUFBTSxDQUFDQyxhQUFNLENBQUNDLFNBQVMsQ0FBQyxNQUFNLEVBQUU7SUFBRUMsSUFBSSxFQUFFO0VBQW1CLENBQUMsQ0FBQyxDQUFDLENBQUNFLGVBQWUsQ0FBQyxNQUFNLEVBQUUsZ0JBQWdCLENBQUM7QUFDMUcsQ0FBQyxDQUFDIiwiaWdub3JlTGlzdCI6W119

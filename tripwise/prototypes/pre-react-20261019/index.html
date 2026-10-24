@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0071e3">
+<meta name="description" content="Tripwise — aviachiptalar, tur paketlar, mehmonxonalar va sayohat rejalari. Interaktiv demo.">
+<title>Tripwise — Sayohatingiz shu yerdan boshlanadi</title>
+<link rel="icon" type="image/png" href="./assets/brand/tripwise-symbol.png">
+<link rel="apple-touch-icon" href="./assets/brand/tripwise-symbol.png">
+<link rel="stylesheet" href="./src/styles/style.css">
+<link rel="stylesheet" href="./src/styles/premium.css">
+<link rel="stylesheet" href="./src/styles/mobile-fixes.css">
+<link rel="stylesheet" href="./src/styles/luxury.css">
+<link rel="stylesheet" href="./src/styles/brand.css">
+<link rel="stylesheet" href="./src/styles/notifications.css">
+<script type="module" src="./src/main.js">
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Kontentga o‘tish</a>
+<div id="app">
+</div>
+<aside id="promo-dock" class="promo-dock" aria-live="polite" aria-label="Sayohat takliflari">
+</aside>
+<button id="scroll-top" class="scroll-top" type="button" aria-label="Sahifa boshiga qaytish" title="Yuqoriga">↑</button>
+<section id="premium-welcome" class="premium-welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title" hidden>
+<div class="welcome-orbit">
+<img class="welcome-symbol" src="./assets/brand/tripwise-symbol.png" alt="Tripwise" width="96" height="96">
+</div>
+<p class="welcome-kicker">TRIPWISE · SAYOHAT OSONROQ</p>
+<h1 id="welcome-title">Xush kelibsiz</h1>
+<p class="welcome-copy">Oqilona rejalang. Uzoqroqqa boring.</p>
+<button id="welcome-start" class="welcome-start" type="button">Sayohatni boshlash <span>↗</span>
+</button>
+<div class="welcome-progress">
+<span>
+</span>
+</div>
+</section>
+<dialog id="modal">
+</dialog>
+<div id="toast" role="status" aria-live="polite">
+</div>
+</body>
+</html>

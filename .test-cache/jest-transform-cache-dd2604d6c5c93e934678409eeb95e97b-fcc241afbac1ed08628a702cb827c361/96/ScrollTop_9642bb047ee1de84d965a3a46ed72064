@@ -1,0 +1,43 @@
+c202fcdf8acdfeb63d9ea61ba190527c
+"use strict";
+
+var _interopRequireWildcard = require("C:/Users/ANUBIS/-travel-website-2.1-06.10.2026/node_modules/@babel/runtime/helpers/interopRequireWildcard.js").default;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ScrollTop = ScrollTop;
+var _react = _interopRequireWildcard(require("react"));
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _jsxFileName = "C:\\Users\\ANUBIS\\-travel-website-2.1-06.10.2026\\src\\tripwise\\components\\ScrollTop.jsx";
+function ScrollTop() {
+  const [visible, setVisible] = (0, _react.useState)(false);
+  (0, _react.useEffect)(() => {
+    let last = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      setVisible(y > 360 && y < last - 4);
+      last = y;
+    };
+    window.addEventListener('scroll', onScroll, {
+      passive: true
+    });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+    id: "scroll-top",
+    className: `scroll-top ${visible ? 'visible' : ''}`,
+    "aria-label": "Sahifa boshiga qaytish",
+    "aria-hidden": !visible,
+    tabIndex: visible ? 0 : -1,
+    onClick: () => window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }),
+    children: "\u2191"
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 16,
+    columnNumber: 10
+  }, this);
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJfaW50ZXJvcFJlcXVpcmVXaWxkY2FyZCIsInJlcXVpcmUiLCJfanN4RGV2UnVudGltZSIsIl9qc3hGaWxlTmFtZSIsIlNjcm9sbFRvcCIsInZpc2libGUiLCJzZXRWaXNpYmxlIiwidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJsYXN0Iiwid2luZG93Iiwic2Nyb2xsWSIsIm9uU2Nyb2xsIiwieSIsImFkZEV2ZW50TGlzdGVuZXIiLCJwYXNzaXZlIiwicmVtb3ZlRXZlbnRMaXN0ZW5lciIsImpzeERFViIsImlkIiwiY2xhc3NOYW1lIiwidGFiSW5kZXgiLCJvbkNsaWNrIiwic2Nyb2xsVG8iLCJ0b3AiLCJiZWhhdmlvciIsImNoaWxkcmVuIiwiZmlsZU5hbWUiLCJsaW5lTnVtYmVyIiwiY29sdW1uTnVtYmVyIl0sInNvdXJjZXMiOlsiU2Nyb2xsVG9wLmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmV4cG9ydCBmdW5jdGlvbiBTY3JvbGxUb3AoKSB7XG4gIGNvbnN0IFt2aXNpYmxlLCBzZXRWaXNpYmxlXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBsZXQgbGFzdCA9IHdpbmRvdy5zY3JvbGxZO1xuICAgIGNvbnN0IG9uU2Nyb2xsID0gKCkgPT4ge1xuICAgICAgY29uc3QgeSA9IHdpbmRvdy5zY3JvbGxZO1xuICAgICAgc2V0VmlzaWJsZSh5ID4gMzYwICYmIHkgPCBsYXN0IC0gNCk7XG4gICAgICBsYXN0ID0geTtcbiAgICB9O1xuICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdzY3JvbGwnLCBvblNjcm9sbCwge1xuICAgICAgcGFzc2l2ZTogdHJ1ZVxuICAgIH0pO1xuICAgIHJldHVybiAoKSA9PiB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcignc2Nyb2xsJywgb25TY3JvbGwpO1xuICB9LCBbXSk7XG4gIHJldHVybiA8YnV0dG9uIGlkPVwic2Nyb2xsLXRvcFwiIGNsYXNzTmFtZT17YHNjcm9sbC10b3AgJHt2aXNpYmxlID8gJ3Zpc2libGUnIDogJyd9YH0gYXJpYS1sYWJlbD1cIlNhaGlmYSBib3NoaWdhIHFheXRpc2hcIiBhcmlhLWhpZGRlbj17IXZpc2libGV9IHRhYkluZGV4PXt2aXNpYmxlID8gMCA6IC0xfSBvbkNsaWNrPXsoKSA9PiB3aW5kb3cuc2Nyb2xsVG8oe1xuICAgIHRvcDogMCxcbiAgICBiZWhhdmlvcjogJ3Ntb290aCdcbiAgfSl9PuKGkTwvYnV0dG9uPjtcbn1cbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBLElBQUFBLE1BQUEsR0FBQUMsdUJBQUEsQ0FBQUMsT0FBQTtBQUFtRCxJQUFBQyxjQUFBLEdBQUFELE9BQUE7QUFBQSxJQUFBRSxZQUFBO0FBQzVDLFNBQVNDLFNBQVNBLENBQUEsRUFBRztFQUMxQixNQUFNLENBQUNDLE9BQU8sRUFBRUMsVUFBVSxDQUFDLEdBQUcsSUFBQUMsZUFBUSxFQUFDLEtBQUssQ0FBQztFQUM3QyxJQUFBQyxnQkFBUyxFQUFDLE1BQU07SUFDZCxJQUFJQyxJQUFJLEdBQUdDLE1BQU0sQ0FBQ0MsT0FBTztJQUN6QixNQUFNQyxRQUFRLEdBQUdBLENBQUEsS0FBTTtNQUNyQixNQUFNQyxDQUFDLEdBQUdILE1BQU0sQ0FBQ0MsT0FBTztNQUN4QkwsVUFBVSxDQUFDTyxDQUFDLEdBQUcsR0FBRyxJQUFJQSxDQUFDLEdBQUdKLElBQUksR0FBRyxDQUFDLENBQUM7TUFDbkNBLElBQUksR0FBR0ksQ0FBQztJQUNWLENBQUM7SUFDREgsTUFBTSxDQUFDSSxnQkFBZ0IsQ0FBQyxRQUFRLEVBQUVGLFFBQVEsRUFBRTtNQUMxQ0csT0FBTyxFQUFFO0lBQ1gsQ0FBQyxDQUFDO0lBQ0YsT0FBTyxNQUFNTCxNQUFNLENBQUNNLG1CQUFtQixDQUFDLFFBQVEsRUFBRUosUUFBUSxDQUFDO0VBQzdELENBQUMsRUFBRSxFQUFFLENBQUM7RUFDTixvQkFBTyxJQUFBVixjQUFBLENBQUFlLE1BQUE7SUFBUUMsRUFBRSxFQUFDLFlBQVk7SUFBQ0MsU0FBUyxFQUFFLGNBQWNkLE9BQU8sR0FBRyxTQUFTLEdBQUcsRUFBRSxFQUFHO0lBQUMsY0FBVyx3QkFBd0I7SUFBQyxlQUFhLENBQUNBLE9BQVE7SUFBQ2UsUUFBUSxFQUFFZixPQUFPLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBRTtJQUFDZ0IsT0FBTyxFQUFFQSxDQUFBLEtBQU1YLE1BQU0sQ0FBQ1ksUUFBUSxDQUFDO01BQ3hNQyxHQUFHLEVBQUUsQ0FBQztNQUNOQyxRQUFRLEVBQUU7SUFDWixDQUFDLENBQUU7SUFBQUMsUUFBQSxFQUFDO0VBQUM7SUFBQUMsUUFBQSxFQUFBdkIsWUFBQTtJQUFBd0IsVUFBQTtJQUFBQyxZQUFBO0VBQUEsT0FBUSxDQUFDO0FBQ2hCIiwiaWdub3JlTGlzdCI6W119

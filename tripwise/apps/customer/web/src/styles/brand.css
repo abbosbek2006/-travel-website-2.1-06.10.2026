@@ -1,0 +1,19 @@
+/* Tripwise identity: supplied emblem and accessible, selectable wordmark. */
+.logo { display: inline-flex; align-items: center; gap: 9px; color: #062441; text-decoration: none; flex-shrink: 0; }
+.brand-symbol { display: block; width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; }
+.brand-name { color: #062441; font-weight: 700; letter-spacing: -.04em; }
+.welcome-orbit { width: 112px; height: 112px; background: #fff; border-color: #c9ad6733; box-shadow: 0 14px 36px #06244110; }
+.welcome-symbol { width: 96px; height: 96px; object-fit: contain; }
+@media (max-width: 680px) {
+  .logo { gap: 5px; }
+  .brand-symbol { width: 34px; height: 34px; }
+  .top .brand-name { font-size: 20px; }
+}
+
+/* Route focus keeps keyboard navigation at the new content without framing the page. */
+#main:focus { outline: none; }
+
+.hero-sidecard { display: block; color: #132846; text-decoration: none; cursor: pointer; }
+.hero-sidecard .hero-sidecard-arrow { color: var(--blue); font-size: 20px; }
+
+.hero-sidecard h3 { color: #132846; }
