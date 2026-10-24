@@ -1,3 +1,4 @@
+import { PageHeading } from './PageHeading.jsx';
 import React from "react";
 import { session } from "../core/session.js";
 import { icon } from "./icons.jsx";
@@ -33,36 +34,19 @@ function Layout({
 <button className="btn sm" data-act="login">{state.user === 'Mehmon' ? 'Kirish' : state.user}</button>
 <button className="iconbtn mobileonly" aria-label="Barcha bo‘limlar" data-act="menu">{icon('menu')}</button>
 </div>
-</div></header><div className="demo-strip">INTERAKTIV BETA · Narxlar va takliflar namunaviy. Haqiqiy bron va to‘lov amalga oshirilmaydi.</div><main id="main" className="container" tabIndex="-1">{children}</main><footer className="footer"><div className="footer-inner">
-<a href="#home" className="logo" aria-label="Tripwise — bosh sahifa">
-<img className="brand-symbol" src="/assets/brand/tripwise-symbol.png" alt="" width="40" height="40" />
-<span className="brand-name">Tripwise</span>
-<span className="pill">BETA</span>
-</a>
-<div>
-<a href="#states">Xizmat holatlari</a>
-<a href="#support">Yordam</a>
-</div>
-<div><button className="textbtn small" data-act="about">Demo haqida va suratlar</button></div>
-</div></footer><nav className="mobilebar" aria-label="Mobil menyu">
+</div></header><main id="main" className="container" tabIndex="-1">{children}</main><nav className="mobilebar" aria-label="Mobil menyu">
 {nav('home', 'Bosh sahifa', 'home')}
-{nav('tours', 'Qidirish', 'search')}
+{nav('tours', 'Tur paketlar', 'bag')}
 {nav('ai', 'AI reja', 'spark')}
+{nav('flights', 'Aviachiptalar', 'plane')}
 {nav('trips', 'Safarlarim', 'bag')}
-{nav('profile', 'Profil', 'user')}
 </nav></>;
 }
 export { Layout };
 export function pagehead(title, sub = '') {
-  return <><div className="breadcrumb">
-<a href="#home">Bosh sahifa</a>
-{" / "}
-{title}
-</div><div className="pagehead">
-<h1>{title}</h1>
-{sub ? <p>{sub}</p> : ''}
-</div></>;
+  return <PageHeading title={title} subtitle={sub} />;
 }
+
 function AccountNavigation(active) {
   return <aside className="panel profileaside">
 <div className="row" style={{

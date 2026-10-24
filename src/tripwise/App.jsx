@@ -9,7 +9,7 @@ import { Welcome } from "./features/welcome.jsx";
 import { RouteView } from "./core/router.jsx";
 import { session } from './core/session.js';
 import { loadState } from './core/store.js';
-import { subscribe, getSnapshot } from './core/navigation.js';
+import { subscribe, getSnapshot, initializeHistory, trackHistory } from './core/navigation.js';
 import { dispatch, disposeEvents } from './core/events.js';
 import { initActions } from './features/actions.js';
 import { initInterface } from './features/interface.js';
@@ -28,12 +28,14 @@ export default function App() {
   const previousRoute = useRef(route);
   session.currentRoute = route;
   useEffect(() => {
+    initializeHistory(window.location.hash.slice(1) || 'home');
     initActions();
     initInterface();
     initAccount();
     initMemories();
     const navigate = () => {
       const next = window.location.hash.slice(1) || 'home';
+      trackHistory(next);
       closeModal();
       if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const transition = document.startViewTransition(() => flushSync(() => setRoute(next)));

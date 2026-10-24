@@ -1,6 +1,6 @@
 import React from "react";
 export const paths = {
-  plane: 'M22 2 9 15M22 2l-7 20-4-9-9-4Z',
+  plane: 'M21.8 2.2c-.9-.9-2.6-.3-4 1.1l-4.5 4.5L3.1 5.5l-.8.8 8.1 5-4.8 5.4-3.5.3-.6.6 4.1 1.7 1.7 4.1.6-.6.3-3.5 5.4-4.8 5 8.1.8-.8-2.3-10.2 4.5-4.5c1.4-1.4 2-3.1 1.1-4Z',
   home: 'm3 10 9-7 9 7v10H3zM9 20v-7h6v7',
   search: 'M21 21l-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0',
   heart: 'M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z',
@@ -32,4 +32,4 @@ export const paths = {
   copy: 'M8 8h13v13H8zM16 8V3H3v13h5',
   map: 'm3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16M15 5v16'
 };
-export const icon = n => <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[n] || paths.spark} /></svg>;
+export const icon = n => <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[n] || paths.spark} fill={n === 'plane' ? 'currentColor' : 'none'} stroke={n === 'plane' ? 'none' : 'currentColor'} /></svg>;

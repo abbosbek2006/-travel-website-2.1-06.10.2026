@@ -17,3 +17,15 @@
 .hero-sidecard .hero-sidecard-arrow { color: var(--blue); font-size: 20px; }
 
 .hero-sidecard h3 { color: #132846; }
+
+.page-back { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: 0 0 18px; padding: 0; border: 1px solid #e6e8ed; border-radius: 50%; background: #fff; color: #263342; box-shadow: 0 3px 12px #10254312; cursor: pointer; color-scheme: light; transition: transform .18s ease, box-shadow .18s ease; }
+.page-back:hover { box-shadow: 0 5px 16px #1025431f; }
+.page-back:active { transform: scale(.95); }
+
+/* Native sticky positioning; React updates only when the heading crosses the bar. */
+.page-heading-toolbar { position: sticky; top: 64px; z-index: 25; display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 8px; min-height: 56px; margin-bottom: 12px; background: var(--bg, #f5f8fc); }
+.page-heading-toolbar .page-back { margin: 0; }
+.page-heading-compact { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; color: #1d1d1f; font-size: 18px; font-weight: 650; letter-spacing: -.025em; opacity: 0; transform: translateY(6px); transition: opacity .22s ease, transform .22s ease; pointer-events: none; }
+.page-heading-toolbar[data-collapsed="true"] { box-shadow: 0 1px 0 #10254312; }
+.page-heading-toolbar[data-collapsed="true"] .page-heading-compact { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .page-heading-compact { transition: none; transform: none; } }
